@@ -1,0 +1,35 @@
+@import "../css/mixins";
+
+.main_container {
+  gap: 2rem;
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-weight: 300;
+
+  img {
+    filter: grayscale(1);
+    z-index: -1;
+  }
+}
+
+.item_container {
+  z-index: -2;
+  background-color: #212121;
+  box-sizing: border-box;
+  padding: 1rem;
+  flex: 50%;
+
+  max-width: calc(50% - 1rem);
+
+  @include breakpoints-down(small) {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  &:last-child {
+    flex: 60%;
+    max-width: 60%;
+  }
+}

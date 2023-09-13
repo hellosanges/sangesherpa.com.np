@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  margin: 2rem;
+  justify-content: space-between;
+
+  &__social{
+    display: flex;
+    ul li {
+        list-style: none;
+        
+    }
+  }
+}
+
