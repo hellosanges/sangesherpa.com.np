@@ -1,14 +1,27 @@
+@import "../css/global";
 .footer {
   display: flex;
   margin: 2rem;
   justify-content: space-between;
+  align-items: center;
 
-  &__social{
+  &__social {
+    height: 100%;
     display: flex;
+    ul {
+      display: flex;
+      align-items: center;
+    }
     ul li {
-        list-style: none;
-        
+      list-style: none;
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
+
+      a {
+        color: $header-color;
+        font-size: 24px;
+      }
     }
   }
 }
-

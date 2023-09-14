@@ -1,7 +1,6 @@
 import React, { useState } from "react"
 import { graphql, useStaticQuery, Link } from "gatsby"
 import * as styles from "./Header.module.scss"
-import { library } from "@fortawesome/fontawesome-svg-core"
 import { useLocation } from "@reach/router"
 
 export default function Header({ pageTitle }) {
@@ -19,11 +18,7 @@ export default function Header({ pageTitle }) {
     }
   `)
 
-  //iconStyle
-  const iconStyle = {
-    fontSize: "24px", // Adjust the size in pixels as needed
-  }
-
+ 
   const { allWpMenuItem } = data
   const location = useLocation()
 

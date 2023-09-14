@@ -1,1 +1,0 @@
-{"version":3,"file":"component---src-pages-index-js-1d322db08442908b3b82.js","mappings":"8MAEe,SAASA,IACtB,OAAOC,EAAAA,cAAA,WAAK,QACd,C","sources":["webpack://gatsby-starter-wordpress-blog/./src/pages/index.js"],"sourcesContent":["import React from \"react\"\r\n\r\nexport default function index() {\r\n  return <div>index</div>\r\n}\r\n"],"names":["index","React"],"sourceRoot":""}
