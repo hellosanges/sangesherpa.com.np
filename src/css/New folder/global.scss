@@ -2,15 +2,10 @@
 @import "mixins";
 @import "animations";
 
-html,
-body {
-  scroll-behavior: auto;
-}
-
 html {
-  background-color: $dark-800;
+  background-color: $bg-color;
   font-size: $base-font-size;
-  color: $white;
+  color: $content-color;
   font-family: Inter, Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -82,13 +77,13 @@ html {
       margin-bottom: 40px;
     }
     a {
-      color: $white;
+      color: $content-color;
       text-decoration: none;
     }
   }
 }
 
 .active {
-  border-bottom: 2px solid $white;
+  border-bottom: 2px solid white;
   padding-bottom: 10px;
 }

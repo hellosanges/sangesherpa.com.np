@@ -23,12 +23,3 @@ $breakpoints-down: (
     @content;
   }
 }
-
-@mixin main-content-style {
-  gap: 1rem;
-  margin: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  font-weight: 300;
-}

@@ -1,0 +1,32 @@
+@import "../css/mixins";
+@import "../css/variables";
+
+.portfolios_container {
+  margin: 2rem;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+
+  .portfolio_inner {
+    
+    background-color: $dark-700;
+    box-sizing: border-box;
+    padding: 1rem;
+    flex: 100%;
+    max-width: 100%;
+    @include breakpoints-up(medium){
+      background-color: $dark-700;
+    box-sizing: border-box;
+    padding: 1rem;
+    flex: 50%;
+    max-width: calc(50% - 0.5rem);
+    }
+    @include breakpoints-up(large){
+      background-color: $dark-700;
+    box-sizing: border-box;
+    padding: 1rem;
+    flex: 25%;
+    max-width: calc(25% - 0.75rem);
+    }
+  }
+}

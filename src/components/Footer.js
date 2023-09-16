@@ -8,7 +8,6 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 
-
 export default function Footer() {
   return (
     <div className={styles.footer}>
@@ -17,23 +16,23 @@ export default function Footer() {
         <p>Stay Connected</p>
 
         <ul>
-          <li>
-            <a href="#">
+          <li key="1">
+            <a href="google.com">
               <FontAwesomeIcon icon={faSquareGithub} />
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li key="2">
+            <a href="google.com">
               <FontAwesomeIcon icon={faSquareFacebook} />
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li key="3">
+            <a href="google.com">
               <FontAwesomeIcon icon={faMailBulk} />
             </a>
           </li>
-          <li>
-            <a href="#">
+          <li key="4">
+            <a href="google.com">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>

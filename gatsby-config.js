@@ -14,6 +14,7 @@ module.exports = {
    * If you need any more you can search here: https://www.gatsbyjs.com/plugins/
    */
   plugins: [
+  
     {
       /**
        * First up is the WordPress source plugin that connects Gatsby
@@ -41,6 +42,13 @@ module.exports = {
       options: {
         name: `assets`,
         path: `${__dirname}/content/assets`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
     },
 

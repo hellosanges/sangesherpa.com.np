@@ -18,6 +18,7 @@ export default function Header({ pageTitle }) {
     }
   `)
 
+ 
   const { allWpMenuItem } = data
   const location = useLocation()
 
@@ -29,18 +30,16 @@ export default function Header({ pageTitle }) {
   }
 
   const menu = (
-
-      <ul>
-        {allWpMenuItem.edges.map(({ node }) => (
-          <li
-            key={node.id}
-            className={location.pathname === node.uri ? "active" : ""}
-          >
-            <Link to={node.uri}>{node.label}</Link>
-          </li>
-        ))}
-      </ul>
-   
+    <ul>
+      {allWpMenuItem.edges.map(({ node }) => (
+        <li
+          key={node.id}
+          className={location.pathname === node.uri ? "active" : ""}
+        >
+          <Link to={node.uri}>{node.label}</Link>
+        </li>
+      ))}
+    </ul>
   )
   return (
     <>

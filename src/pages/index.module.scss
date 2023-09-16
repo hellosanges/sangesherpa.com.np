@@ -1,12 +1,8 @@
 @import "../css/mixins";
+@import "../css/variables";
 
 .main_container {
-  gap: 2rem;
-  margin: 2rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  font-weight: 300;
+  @include main-content-style;
 
   img {
     filter: grayscale(1);
@@ -16,12 +12,15 @@
 
 .item_container {
   z-index: -2;
-  background-color: #212121;
+  background-color: $dark-700;
   box-sizing: border-box;
   padding: 1rem;
   flex: 50%;
+  max-width: calc(50% - 0.5rem);
 
-  max-width: calc(50% - 1rem);
+  h2{
+    margin-top: 0;
+  }
 
   @include breakpoints-down(small) {
     flex: 100%;
