@@ -1,5 +1,7 @@
 @import "../css/mixins";
 @import "../css/variables";
+@import "../css/variables";
+@import "../css/global";
 
 .portfolios_container {
   margin: 2rem;
@@ -27,6 +29,43 @@
       padding: 1rem;
       flex: 25%;
       max-width: calc(25% - 0.75rem);
+    }
+
+    &__portType,
+    &__portTech {
+      display: flex;
+      align-items: center;
+      align-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    &__portType {
+      margin-top: 12px;
+    }
+
+    ul {
+      display: flex;
+      margin: 8px;
+      padding: 0;
+    }
+    ul li {
+      list-style: none;
+    }
+
+    button {
+      cursor: pointer;
+      margin-top: 8px;
+      padding: 8px;
+      border: 0;
+
+      a {
+        font-weight: 500;
+        color: $netural-800;
+        text-decoration: none;
+        &:hover {
+          color: $netural-900;
+        }
+      }
     }
   }
 }

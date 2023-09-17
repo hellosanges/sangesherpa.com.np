@@ -3,6 +3,7 @@ import Layout from "../components/Layout"
 import { graphql } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as styles from "./portfolios.module.scss"
+import "../css/global.scss"
 
 export default function portfolios({ data }) {
   const { allWpPortfolio } = data
@@ -12,7 +13,7 @@ export default function portfolios({ data }) {
       <div className={styles.portfolios_container}>
         {allWpPortfolio.edges.map(({ node }) => (
           <div className={styles.portfolio_inner}>
-            <div >
+            <div className={styles.porfolio_inner__frontImg}>
               {
                 <GatsbyImage
                   image={getImage(node.portfolioimage.mainImage.node.localFile)}
@@ -20,21 +21,31 @@ export default function portfolios({ data }) {
                 />
               }
             </div>
-            <div >
-              <span>Type:</span>{node.portfolioTypes.nodes.map(node => (
+            <div className={styles.portfolio_inner__portType}>
+              <span>Type :</span>
+              {node.portfolioTypes.nodes.map(node => (
                 <ul>
-                  <li key={node.name}>{node.name}</li>
+                  <li className="button button-heavy" key={node.name}>
+                    {node.name}
+                  </li>
                 </ul>
               ))}
             </div>
-            <div >
-             <span>Tech used:</span> {node.technologies.nodes.map(node => (
+            <div className={styles.portfolio_inner__portTech}>
+              <span>Tech used:</span>{" "}
+              {node.technologies.nodes.map(node => (
                 <ul>
-                  <li key={node.name}>{node.name}</li>
+                  <li className="button" key={node.name}>
+                    {node.name}
+                  </li>
                 </ul>
               ))}
             </div>
-            <div>  <a href={ node.uri}>Explore the Project</a></div>
+            <button className="button-opp ">
+              <span>
+                <a href={node.uri}>Explore the Project</a>
+              </span>
+            </button>
           </div>
         ))}
       </div>

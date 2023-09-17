@@ -92,3 +92,26 @@ html {
   border-bottom: 2px solid $white;
   padding-bottom: 10px;
 }
+
+.button {
+  background-color: $netural-800;
+  color: $netural-200;
+  padding: 4px 8px;
+  border-radius: 4px;
+  width: 100%;
+ 
+}
+
+.button-heavy {
+  font-weight: 600;
+}
+
+.button-opp {
+  background-color: $netural-200;
+  color: $netural-800;
+  padding: 4px 8px;
+  border-radius: 4px;
+  &:hover {
+    background-color: $netural-400;
+  }
+}
