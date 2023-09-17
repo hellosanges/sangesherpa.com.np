@@ -34,7 +34,7 @@ export default function portfolios({ data }) {
                 </ul>
               ))}
             </div>
-            <div> { }</div>
+            <div>  <a href={ node.uri}>Explore the Project</a></div>
           </div>
         ))}
       </div>
