@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkgatsby_starter_wordpress_blog=self.webpackChunkgatsby_starter_wordpress_blog||[]).push([[235],{5526:function(e,t,l){l.r(t);var r=l(7294),n=l(4947);t.default=e=>{let{pageContext:{node:t}}=e;return r.createElement(n.Z,null,r.createElement("div",null,r.createElement("p",null,"This is a heading"),r.createElement("h1",null,t.uri)))}}}]);
-//# sourceMappingURL=component---src-templates-portfolio-page-js-7f853b08192886be3ff0.js.map

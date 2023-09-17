@@ -5,6 +5,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         edges {
           node {
             title
+            slug
             uri
             portfolioimage {
               editor {
@@ -16,15 +17,32 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
                   }
                 }
               }
-            }
-            technologies {
-              nodes {
-                name
+              port2 {
+                node {
+                  localFile {
+                    childImageSharp {
+                      gatsbyImageData
+                    }
+                  }
+                }
               }
-            }
-            portfolioTypes {
-              nodes {
-                name
+              port3 {
+                node {
+                  localFile {
+                    childImageSharp {
+                      gatsbyImageData
+                    }
+                  }
+                }
+              }
+              port4 {
+                node {
+                  localFile {
+                    childImageSharp {
+                      gatsbyImageData
+                    }
+                  }
+                }
               }
             }
           }
@@ -33,15 +51,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
-  if (result.errors) {
-    reporter.error("There was an error fetching posts", result.errors)
-  }
   const { allWpPortfolio } = result.data
   // Define the template to use
 
   allWpPortfolio.edges.map(({ node }) => {
     actions.createPage({
-      path: `${node.uri}`,
+      path: node.uri,
       component: require.resolve(`./src/templates/PortfolioPage.js`),
       context: { node },
     })

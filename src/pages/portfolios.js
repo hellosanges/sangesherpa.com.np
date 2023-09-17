@@ -12,7 +12,7 @@ export default function portfolios({ data }) {
       <div className={styles.portfolios_container}>
         {allWpPortfolio.edges.map(({ node }) => (
           <div className={styles.portfolio_inner}>
-            <div className={styles.porfolio_inner__frontImg}>
+            <div >
               {
                 <GatsbyImage
                   image={getImage(node.portfolioimage.mainImage.node.localFile)}
@@ -20,14 +20,14 @@ export default function portfolios({ data }) {
                 />
               }
             </div>
-            <div className={styles.porfolio_inner__portType}>
+            <div >
               <span>Type:</span>{node.portfolioTypes.nodes.map(node => (
                 <ul>
                   <li key={node.name}>{node.name}</li>
                 </ul>
               ))}
             </div>
-            <div className={styles.porfolio_inner__portTech}>
+            <div >
              <span>Tech used:</span> {node.technologies.nodes.map(node => (
                 <ul>
                   <li key={node.name}>{node.name}</li>
