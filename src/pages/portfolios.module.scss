@@ -1,6 +1,5 @@
 @import "../css/mixins";
 @import "../css/variables";
-@import "../css/variables";
 @import "../css/global";
 
 .portfolios_container {
@@ -58,6 +57,7 @@
       margin-top: 8px;
       padding: 8px;
       border: 0;
+      align-content: flex-end;
 
       a {
         font-weight: 500;

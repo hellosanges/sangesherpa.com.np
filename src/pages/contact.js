@@ -8,7 +8,20 @@ export default function contact() {
       <div className={styles.contact_form}>
         <h2>Lets get Connected and Socialize</h2>
 
-        <form className={styles.contact_form__fields}>
+        <form
+          className={styles.contact_form__fields}
+          name="form_sange"
+          method="post"
+          data-netlify="true"
+          onSubmit="submit"
+          data-netlify-honeypot="bot-field"
+        >
+          <div hidden>
+            <label>
+              Don't fill this out:
+              <input name="bot-field" />
+            </label>
+          </div>
           <div>
             <label htmlFor="name">Name</label>
             <input type="text" id="name" name="name" required />
@@ -26,7 +39,6 @@ export default function contact() {
           </div>
         </form>
       </div>
-      
     </Layout>
   )
 }

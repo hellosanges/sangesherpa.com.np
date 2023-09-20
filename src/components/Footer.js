@@ -17,22 +17,22 @@ export default function Footer() {
 
         <ul>
           <li key="1">
-            <a href="google.com">
+            <a href="https://github.com/hellosanges/">
               <FontAwesomeIcon icon={faSquareGithub} />
             </a>
           </li>
           <li key="2">
-            <a href="google.com">
+            <a href="https://www.facebook.com/sangesherpa24/">
               <FontAwesomeIcon icon={faSquareFacebook} />
             </a>
           </li>
           <li key="3">
-            <a href="google.com">
+            <a href="mailto:hellosanges@gmail.com">
               <FontAwesomeIcon icon={faMailBulk} />
             </a>
           </li>
           <li key="4">
-            <a href="google.com">
+            <a href="https://www.linkedin.com/in/sange-sherpa/">
               <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
