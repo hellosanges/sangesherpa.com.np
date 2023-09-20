@@ -11,12 +11,14 @@ export default function contact() {
         <form
           className={styles.contact_form__fields}
           name="form_sange"
-          method="post"
-          data-netlify="true"
-          onSubmit="submit"
+          method="POST"
+          data-netlify="true" // This attribute tells Netlify to handle form submissions
           data-netlify-honeypot="bot-field"
         >
-          <div hidden>
+          <input type="hidden" name="form-name" value="contact" />{" "}
+          {/* Specify the form name */}
+          <div className={styles.hidden}>
+            {/* Hidden field for Netlify honeypot */}
             <label>
               Don't fill this out:
               <input name="bot-field" />
