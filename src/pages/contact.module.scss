@@ -6,7 +6,6 @@
   flex-direction: column;
   align-items: center;
 
-
   &__fields {
     display: flex;
     flex-direction: column;
@@ -50,4 +49,8 @@
       padding: 0.5rem;
     }
   }
+}
+
+.hidden {
+  display: hidden;
 }

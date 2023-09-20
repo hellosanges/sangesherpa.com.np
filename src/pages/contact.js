@@ -14,6 +14,7 @@ export default function contact() {
           method="POST"
           data-netlify="true" // This attribute tells Netlify to handle form submissions
           data-netlify-honeypot="bot-field"
+          onSubmit="submit"
         >
           <input type="hidden" name="form-name" value="contact" />{" "}
           {/* Specify the form name */}
