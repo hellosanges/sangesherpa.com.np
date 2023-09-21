@@ -8,12 +8,13 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons"
 
+
 export default function Footer() {
   return (
     <div className={styles.footer}>
       <div>All right reserved © Sange Sherpa</div>
       <div className={styles.footer__social}>
-        <p>Stay Connected</p>
+        <p className={`hide-for-mobile`}>Stay Connected</p>
 
         <ul>
           <li key="1">

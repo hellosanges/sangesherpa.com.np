@@ -14,7 +14,6 @@ module.exports = {
    * If you need any more you can search here: https://www.gatsbyjs.com/plugins/
    */
   plugins: [
-  
     {
       /**
        * First up is the WordPress source plugin that connects Gatsby
@@ -70,7 +69,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `src/images/favicon.png`,
       },
     },
 

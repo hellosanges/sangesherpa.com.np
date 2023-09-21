@@ -2,7 +2,12 @@ import React from "react"
 import Layout from "../components/Layout"
 import * as styles from "./contact.module.scss"
 
-export default function contact() {
+export default function Contact() {
+  const handleSubmit = event => {
+    event.preventDefault() // Prevent the default form submission behavior
+    // Add your form submission logic here
+  }
+
   return (
     <Layout>
       <div className={styles.contact_form}>
@@ -14,7 +19,7 @@ export default function contact() {
           method="POST"
           data-netlify="true" // This attribute tells Netlify to handle form submissions
           data-netlify-honeypot="bot-field"
-          onSubmit="submit"
+          onSubmit={handleSubmit} // Provide the function to handle form submission
         >
           <input type="hidden" name="form-name" value="contact v1" />{" "}
           {/* Specify the form name */}

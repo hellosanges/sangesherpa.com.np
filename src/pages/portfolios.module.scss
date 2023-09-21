@@ -7,7 +7,6 @@
   gap: 1rem;
   display: flex;
   flex-wrap: wrap;
-  z-index: 1;
 
   .portfolio_inner {
     background-color: $dark-700;
@@ -15,6 +14,8 @@
     padding: 1rem;
     flex: 100%;
     max-width: 100%;
+    z-index: -2;
+
 
     @include breakpoints-up(medium) {
       background-color: $dark-700;

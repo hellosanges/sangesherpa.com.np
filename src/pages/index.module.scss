@@ -18,17 +18,12 @@
   flex: 50%;
   max-width: calc(50% - 0.5rem);
 
-  h2{
+  h2 {
     margin-top: 0;
   }
 
   @include breakpoints-down(small) {
     flex: 100%;
     max-width: 100%;
-  }
-
-  &:last-child {
-    flex: 60%;
-    max-width: 60%;
   }
 }
