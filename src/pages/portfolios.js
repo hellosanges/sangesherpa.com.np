@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import * as styles from "./portfolios.module.scss"
 import "../css/global.scss"
@@ -41,11 +41,14 @@ export default function portfolios({ data }) {
                 </ul>
               ))}
             </div>
-            <button className="button-opp ">
-              <span>
-                <a href={node.uri}>Explore the Project</a>
-              </span>
-            </button>
+
+            <div>
+              <button className="button-opp ">
+                <span>
+                  <Link to={node.uri}>Explore the Project</Link>
+                </span>
+              </button>
+            </div>
           </div>
         ))}
       </div>

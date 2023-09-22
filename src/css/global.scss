@@ -61,45 +61,12 @@ html {
   }
 }
 
-.menu_expand {
-  z-index: 100;
-  width: 100%;
-  background-color: #2c2c2c;
-  position: absolute;
-  width: calc(100% - 4rem);
-  left: 50%;
-  transform: translate(-50%);
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-  }
-  ul li {
-    list-style: none;
-    &:not(:last-child) {
-      margin-bottom: 40px;
-    }
-    a {
-      color: $white;
-      text-decoration: none;
-    }
-  }
-}
-
-.active {
-  border-bottom: 2px solid $white;
-  padding-bottom: 10px;
-}
-
 .button {
   background-color: $netural-800;
   color: $netural-200;
   padding: 4px 8px;
   border-radius: 4px;
   width: 100%;
- 
 }
 
 .button-heavy {
@@ -114,4 +81,8 @@ html {
   &:hover {
     background-color: $netural-400;
   }
+}
+  .active {
+  border-bottom: 2px solid $white;
+  padding-bottom: 10px;
 }
