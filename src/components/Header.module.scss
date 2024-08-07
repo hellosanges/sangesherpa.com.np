@@ -1,0 +1,40 @@
+@import "../css/global";
+@import "../css/variables";
+@import "../css/mixins";
+
+.filler {
+  height: 0.5px;
+
+}
+
+
+
+.header {
+  margin: 2.5rem 2rem;
+  z-index: 100;
+
+
+  @include breakpoints-up(medium) {
+    margin: 3rem 2rem;
+  }
+
+  //underline for active menu
+
+  &__logo {
+    h2 {
+      font-size: $mb-large;
+      line-height: 1.2;
+      margin: 0;
+      @include breakpoints-up(medium) {
+        font-size: $large-font;
+      }
+    }
+    h3 {
+      font-size: 1rem;
+      margin: 0;
+    }
+  }
+
+
+
+}

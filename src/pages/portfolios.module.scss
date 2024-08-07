@@ -1,0 +1,75 @@
+@import "../css/mixins";
+@import "../css/variables";
+@import "../css/global";
+
+.portfolios_container {
+  margin: 2rem;
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+
+
+  .portfolio_inner {
+    position: relative;
+    background-color: $dark-700;
+    box-sizing: border-box;
+    padding: 1rem;
+    flex: 100%;
+    max-width: 100%;
+      z-index: 1;
+ 
+
+    @include breakpoints-up(medium) {
+      background-color: $dark-700;
+      box-sizing: border-box;
+      padding: 1rem;
+      flex: 50%;
+      max-width: calc(50% - 0.5rem);
+    }
+    @include breakpoints-up(large) {
+      background-color: $dark-700;
+      box-sizing: border-box;
+      padding: 1rem;
+      flex: 25%;
+      max-width: calc(25% - 0.75rem);
+    }
+
+    &__portType,
+    &__portTech {
+      display: flex;
+      align-items: center;
+      align-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    &__portType {
+      margin-top: 12px;
+    }
+
+    ul {
+      display: flex;
+      margin: 8px;
+      padding: 0;
+    }
+    ul li {
+      list-style: none;
+    }
+
+    button {
+      cursor: pointer;
+      margin-top: 8px;
+      padding: 8px;
+      border: 0;
+      align-content: flex-end;
+
+      a {
+        font-weight: 500;
+        color: $netural-800;
+        text-decoration: none;
+        &:hover {
+          color: $netural-900;
+        }
+      }
+    }
+  }
+}
