@@ -1,4 +1,11 @@
 AOS.init({ duration: 1200 });
+window.onload = function () {
+  const grid = document.querySelector(".gallery-grid");
+  const msnry = new Masonry(grid, {
+    percentPosition: true,
+  });
+};
+
 document.addEventListener("DOMContentLoaded", () => {
   // --- Create LightBox
   const galleryGrid = document.querySelector(".gallery-grid");
