@@ -268,4 +268,15 @@ body {
 
 .social .bi {
   margin-left: 15px;
+}
+
+.important_word a {
+  color: #00e4ff;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.important_word a:hover {
+  color: #ff1b00;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
