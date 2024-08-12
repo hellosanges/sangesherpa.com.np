@@ -84,21 +84,80 @@
     </div>
     <div class="container-xxl">
       <div class="row pb-5" data-aos="fade-up">
-        <div class="col-xs-12 h2 text-center">Thank you for contacting me!</div>
+        <div class="col-xs-12 h2 text-center">Contact Me</div>
         <div class="col-xs-12 text-center">
-          I will contact you as soon as possible. I will be my pleasure knowing
-          you.
+          We can get acquainted and hire me
         </div>
       </div>
     </div>
 
-    <div class="container-xxl">
-      <div class="row" data-aos="fade-up" data-aos-delay="200">
-        <div class="col">
-          <p>
-            You can contact me through following details if there is any
-            technical problem. Thank you.
-          </p>
+    <div class="container-xxl" data-aos="fade-up" data-aos-delay="200">
+      <div class="row">
+        <div class="col-md-6 pb-4">
+          <form
+            class="needs-validation"
+            name="Contact Form"
+            method="post"
+            data-netlify="true"
+            onsubmit="submit"
+            data-netlify-honeypot="bot-field"
+            action="/sucess.html"
+          >
+            <input class="d-none" name="bot-field" />
+
+            <label for="name" class="form-label">Full Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="e.g. John Doe"
+              required
+              name="name"
+            />
+
+            <div class="invalid-feedback">Please enter your full name.</div>
+            <br />
+
+            <label for="email" class="form-label">Email Address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="e.g. sange@example.com"
+              required
+              name="email"
+            />
+            <div class="invalid-feedback">
+              Please enter a valid email address.
+            </div>
+            <br />
+
+            <label for="subject" class="form-label">Subject</label>
+            <input
+              type="text"
+              class="form-control"
+              id="subject"
+              placeholder="e.g. Enquiry"
+              required
+              name="subject"
+            />
+            <div class="invalid-feedback">Please enter a subject.</div>
+            <br />
+
+            <label for="message" class="form-label">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              placeholder="Your Message"
+              name="message"
+            ></textarea>
+
+            <br />
+
+            <button type="submit" class="btn btn-info">Submit</button>
+          </form>
+        </div>
+        <div class="col-md-6">
           <h5>
             <i class="bi bi-geo-alt-fill" style="color: #ff1b00"></i>
             Address
