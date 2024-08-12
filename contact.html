@@ -100,7 +100,10 @@
             method="post"
             data-netlify="true"
             onsubmit="submit"
+            data-netlify-honeypot="bot-field"
           >
+            <input class="d-none" name="bot-field" />
+
             <label for="name" class="form-label">Full Name</label>
             <input
               type="text"
